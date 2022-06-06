@@ -4,7 +4,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function HelloWorld() {
-    return <div>Hello World!</div>;
+  const styleObj = {
+      fontSize: 26,
+      marginTop: "64px",
+      textAlign: 'center',
+  };
+  return <div style={styleObj}>Hello World!</div>;
 }
 
 const xx = <HelloWorld />;
