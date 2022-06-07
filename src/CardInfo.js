@@ -13,6 +13,11 @@ export type CardInfo = $ReadOnly<{|
 
 export const cardInfos: $ReadOnlyArray<CardInfo> = [
   {
+    n: 1,
+    question: 'What is the supreme law of the land?',
+    answers: ['the Constitution'],
+  },
+  {
     n: 42,
     question: (
       <div textAlign="left">

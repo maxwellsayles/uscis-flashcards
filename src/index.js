@@ -2,19 +2,44 @@
 
 import { Card } from './Card';
 import { cardInfos } from './CardInfo';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
 function App() {
-  const [idx, setIdx] = useState(0);
+  const [idx, _setIdx] = useState(1);
+  const [showAnswers, _setShowAnswers] = useState(false);
+
+  const idxRef = useRef(idx);
+  const setIdx = (x) => {
+    idxRef.current = x;
+    _setIdx(x);
+  };
+  const showAnswersRef = useRef(showAnswers);
+  const setShowAnswers = (x) => {
+    showAnswersRef.current = x;
+    _setShowAnswers(x);
+  };
 
   function keyupHandler(event: KeyboardEvent) {
+    const idx = idxRef.current;
+    const showAnswers = showAnswersRef.current;
     switch (event.key) {
       case 'ArrowLeft':
-        setIdx(idx > 0 ? idx - 1 : 0);
+        if (!showAnswers) {
+          setIdx(Math.max(0, idx - 1));
+        } else {
+          setShowAnswers(false);
+        }
         break;
       case 'ArrowRight':
-        setIdx(idx < cardInfos.length ? idx + 1 : cardInfos.length - 1);
+        if (!showAnswers) {
+          setShowAnswers(true);
+        } else {
+          if (idx + 1 < cardInfos.length) {
+            setShowAnswers(false);
+          }
+          setIdx(Math.min(cardInfos.length - 1, idx + 1));
+        }
         break;
     }
   }
@@ -25,7 +50,11 @@ function App() {
   }, []);
 
   const card = cardInfos[idx];
-  return <Card n={card.n} question={card.question} answers={card.answers} />;
+  return showAnswers ? (
+    <Card n={card.n} question={card.question} answers={card.answers} />
+  ) : (
+    <Card n={card.n} question={card.question} />
+  );
 }
 
 const idx = 1;
