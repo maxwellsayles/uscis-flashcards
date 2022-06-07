@@ -6,7 +6,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
 function App() {
-  const [idx, _setIdx] = useState(1);
+  const [idx, _setIdx] = useState(0);
   const [showAnswers, _setShowAnswers] = useState(false);
 
   const idxRef = useRef(idx);

@@ -18,6 +18,15 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
     answers: ['the Constitution'],
   },
   {
+    n: 2,
+    question: 'What does the Constitution do?',
+    answers: [
+      'sets up the government',
+      'defines the government',
+      'protects basic rights of Americans',
+    ],
+  },
+  {
     n: 42,
     question: (
       <div textAlign="left">
