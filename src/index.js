@@ -58,6 +58,19 @@ const answers: Answers = [
   'approve zoning and land use',
 ];
 
+function handleKeyUp(event: KeyboardEvent) {
+  switch (event.key) {
+    case 'ArrowLeft':
+      alert('Previous');
+      break;
+    case 'ArrowRight':
+      alert('Next');
+      break;
+  }
+}
+
+document.addEventListener('keyup', handleKeyUp);
+
 const xx = <Card n={42} question={question} answers={answers} />;
 const root = document.getElementById('root');
 if (root === null) {
