@@ -7,13 +7,13 @@ import Table from 'react-table';
 type Answers = $ReadOnlyArray<React.Node>;
 type Question = React.Node;
 
-type Card = $ReadOnly<{|
+type CardInfo = $ReadOnly<{|
   n: number,
   question: React.Node,
   answers?: Answers,
 |}>;
 
-function HelloWorld({ n, question, answers }: Card) {
+function Card({ n, question, answers }: CardInfo) {
   const answerElems = (answers ?? []).map((answer) => <li>{answer}</li>);
 
   return (
@@ -57,7 +57,7 @@ const answers: Answers = [
   'approve zoning and land use',
 ];
 
-const xx = <HelloWorld n={42} question={question} answers={answers} />;
+const xx = <Card n={42} question={question} answers={answers} />;
 const root = document.getElementById('root');
 if (root === null) {
   alert('You must specify a <div id="root">');
