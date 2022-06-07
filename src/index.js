@@ -19,7 +19,8 @@ function Card({ n, question, answers }: CardInfo) {
   return (
     <div
       style={{
-        marginTop: '64px',
+        margin: '64px auto auto auto',
+        width: '60%',
         textAlign: 'center',
       }}
     >
