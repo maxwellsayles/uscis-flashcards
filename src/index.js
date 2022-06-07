@@ -26,7 +26,7 @@ function App() {
     switch (event.key) {
       case 'ArrowLeft':
         if (!showAnswers) {
-          setIdx(Math.max(0, idx - 1));
+          setIdx(idx > 0 ? idx - 1 : cardInfos.length - 1);
         } else {
           setShowAnswers(false);
         }
@@ -35,10 +35,8 @@ function App() {
         if (!showAnswers) {
           setShowAnswers(true);
         } else {
-          if (idx + 1 < cardInfos.length) {
-            setShowAnswers(false);
-          }
-          setIdx(Math.min(cardInfos.length - 1, idx + 1));
+          setShowAnswers(false);
+          setIdx(idx + 1 == cardInfos.length ? 0 : idx + 1);
         }
         break;
     }
