@@ -10,11 +10,11 @@ type Question = React.Node;
 type Card = $ReadOnly<{|
   n: number,
   question: React.Node,
-  answers: Answers,
+  answers?: Answers,
 |}>;
 
 function HelloWorld({ n, question, answers }: Card) {
-  const answerElems = answers.map((answer) => <li>{answer}</li>);
+  const answerElems = (answers ?? []).map((answer) => <li>{answer}</li>);
 
   return (
     <div
