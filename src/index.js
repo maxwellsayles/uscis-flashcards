@@ -1,17 +1,11 @@
 // @flow
 
+import { cardInfos } from './CardInfo';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import Table from 'react-table';
 
-type Answers = $ReadOnlyArray<React.Node>;
-type Question = React.Node;
-
-type CardInfo = $ReadOnly<{|
-  n: number,
-  question: React.Node,
-  answers?: Answers,
-|}>;
+import type { CardInfo } from './CardInfo';
 
 function Card({ n, question, answers }: CardInfo) {
   const answerElems = (answers ?? []).map((answer) => <li>{answer}</li>);
@@ -44,20 +38,6 @@ function Card({ n, question, answers }: CardInfo) {
   );
 }
 
-const question: React.Node = (
-  <div textAlign="left">
-    Under our Constitution, some powers belong to the states. What is{' '}
-    <em>one</em> power of the states?
-  </div>
-);
-const answers: Answers = [
-  'provide schooling and education',
-  'provide protection (police)',
-  'provide safety (fire departments)',
-  'give a driver’s license',
-  'approve zoning and land use',
-];
-
 function handleKeyUp(event: KeyboardEvent) {
   switch (event.key) {
     case 'ArrowLeft':
@@ -71,7 +51,12 @@ function handleKeyUp(event: KeyboardEvent) {
 
 document.addEventListener('keyup', handleKeyUp);
 
-const xx = <Card n={42} question={question} answers={answers} />;
+const idx = 1;
+const n = cardInfos[idx].n;
+const question = cardInfos[idx].question;
+const answers = cardInfos[idx].answers;
+
+const xx = <Card n={n} question={question} answers={answers} />;
 const root = document.getElementById('root');
 if (root === null) {
   alert('You must specify a <div id="root">');
