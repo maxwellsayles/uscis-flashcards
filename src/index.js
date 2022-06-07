@@ -5,7 +5,9 @@ import { cardInfos } from './CardInfo';
 import React, { useEffect, useState, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
-function App() {
+import type { CardInfo } from './CardInfo';
+
+function App({ cardInfos }: { cardInfos: $ReadOnlyArray<CardInfo> }) {
   const [idx, _setIdx] = useState(0);
   const [showAnswers, _setShowAnswers] = useState(false);
 
@@ -55,12 +57,8 @@ function App() {
   );
 }
 
-const idx = 1;
-const n = cardInfos[idx].n;
-const question = cardInfos[idx].question;
-const answers = cardInfos[idx].answers;
-
-const xx = <App />;
+const shuffledCardInfos = [...cardInfos].sort(() => Math.random() - 0.5);
+const xx = <App cardInfos={shuffledCardInfos} />;
 const root = document.getElementById('root');
 if (root === null) {
   alert('You must specify a <div id="root">');
