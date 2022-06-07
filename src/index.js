@@ -1,42 +1,9 @@
 // @flow
 
+import { Card } from './Card';
 import { cardInfos } from './CardInfo';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
-import Table from 'react-table';
-
-import type { CardInfo } from './CardInfo';
-
-function Card({ n, question, answers }: CardInfo) {
-  const answerElems = (answers ?? []).map((answer) => <li>{answer}</li>);
-
-  return (
-    <div
-      style={{
-        margin: '100px auto auto auto',
-        width: '60%',
-        textAlign: 'center',
-      }}
-    >
-      <table>
-        <tbody>
-          <tr>
-            <td valign="top">
-              <h2>{n}.</h2>
-            </td>
-            <td align="left">
-              <h2>{question}</h2>
-            </td>
-          </tr>
-          <tr>
-            <td />
-            <td align="left">{answerElems}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  );
-}
 
 function handleKeyUp(event: KeyboardEvent) {
   switch (event.key) {
