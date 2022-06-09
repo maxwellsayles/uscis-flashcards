@@ -510,8 +510,94 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
     answers: ['Africans', 'people from Africa'],
   },
   {
+    n: 61,
+    question: <>Why did the colonists fight the British?</>,
+    answers: [
+      'because of high taxes (taxation without representation)',
+      'because the British army stayed in their houses (boarding, quartering)',
+      'because they didn’t have self-government',
+    ],
+  },
+  {
+    n: 62,
+    question: 'Who wrote the Declaration of Independence?',
+    answers: ['(Thomas) Jefferson'],
+  },
+  {
+    n: 63,
+    question: 'When was the Declaration of Independence adopted?',
+    answers: ['July 4, 1776'],
+  },
+  {
+    n: 64,
+    question: (
+      <>
+        There were 13 original states. Name <em>three</em>.
+      </>
+    ),
+    answers: [
+      'New Hampshire',
+      'Massachusetts',
+      'Rhode Island',
+      'Connecticut',
+      'New York',
+      'New Jersey',
+      'Pennsylvania',
+      'Delaware',
+      'Maryland',
+      'Virginia',
+      'North Carolina',
+      'South Carolina',
+      'Georgia',
+    ],
+  },
+  {
+    n: 65,
+    question: <>What happened at the Constitutional Convention?</>,
+    answers: [
+      'The Constitution was written.',
+      'The Founding Fathers wrote the Constitution.',
+    ],
+  },
+  { n: 66, question: 'When was the Constitution written?', answers: ['1787'] },
+  {
+    n: 67,
+    question: (
+      <>
+        The Federalist Papers supported the passage of the U.S. Constitution.
+        Name <em>one</em> of the writers.
+      </>
+    ),
+    answers: [
+      '(James) Madison',
+      '(Alexander) Hamilton',
+      '(John) Jay',
+      'Publius',
+    ],
+  },
+  {
+    n: 68,
+    question: (
+      <>
+        What is <em>one</em> thing Benjamin Franklin is famous for?
+      </>
+    ),
+    answers: [
+      'U.S. diplomat',
+      'oldest member of the Constitutional Convention',
+      'first Postmaster General of the United States',
+      'writer of “Poor Richard’s Almanac”',
+      'started the first free libraries',
+    ],
+  },
+  {
     n: 69,
     question: 'Who is the “Father of Our Country”?',
+    answers: ['(George) Washington'],
+  },
+  {
+    n: 70,
+    question: 'Who was the first President?*',
     answers: ['(George) Washington'],
   },
 ];
