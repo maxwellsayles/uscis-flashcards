@@ -724,6 +724,177 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
       'worked for equality for all Americans',
     ],
   },
+  {
+    n: 86,
+    question: (
+      <>
+        What major event happened on September 11, 2001, in the United States?
+      </>
+    ),
+    answers: ['Terrorists attacked the United States.'],
+  },
+  {
+    n: 87,
+    question: (
+      <>
+        Name <em>one</em> American Indian tribe in the United States.
+      </>
+    ),
+    answers: [
+      'Cherokee',
+      'Navajo',
+      'Sioux',
+      'Chippewa',
+      'Choctaw',
+      'Pueblo',
+      'Apache',
+      'Iroquois',
+      'Creek',
+      'Blackfeet',
+      'Seminole',
+      'Cheyenne',
+      'Arawak',
+      'Shawnee',
+      'Mohegan',
+      'Huron',
+      'Oneida',
+      'Lakota',
+      'Crow',
+      'Teton',
+      'Hopi',
+      'Inuit',
+    ],
+  },
+  {
+    n: 88,
+    question: (
+      <>
+        Name <em>one</em> of the two longest rivers in the United States.
+      </>
+    ),
+    answers: ['Missouri (River)', 'Mississippi (River)'],
+  },
+  {
+    n: 89,
+    question: <>What ocean is on the West Coast of the United States?</>,
+    answers: ['Pacific (Ocean)'],
+  },
+  {
+    n: 90,
+    question: <>What ocean is on the East Coast of the United States?</>,
+    answers: ['Atlantic (Ocean)'],
+  },
+  {
+    n: 91,
+    question: (
+      <>
+        Name <em>one</em> U.S. territory.
+      </>
+    ),
+    answers: [
+      'Puerto Rico',
+      'U.S. Virgin Islands',
+      'American Samoa',
+      'Northern Mariana Islands',
+      'Guam',
+    ],
+  },
+  {
+    n: 92,
+    question: (
+      <>
+        Name <em>one</em> state that borders Canada.
+      </>
+    ),
+    answers: [
+      'Maine',
+      'New Hampshire',
+      'Vermont',
+      'New York',
+      'Pennsylvania',
+      'Ohio',
+      'Michigan',
+      'Minnesota',
+      'North Dakota',
+      'Montana',
+      'Idaho',
+      'Washington',
+      'Alaska',
+    ],
+  },
+  {
+    n: 93,
+    question: (
+      <>
+        Name <em>one</em> state that borders Mexico.
+      </>
+    ),
+    answers: ['California', 'Arizona', 'New Mexico', 'Texas'],
+  },
+  {
+    n: 94,
+    question: 'What is the capital of the United States?*',
+    answers: ['Washington, D.C.'],
+  },
+  {
+    n: 95,
+    question: 'Where is the Statue of Liberty?*',
+    answers: [
+      'New York (Harbor)',
+      'Liberty Island',
+      <em>
+        Also acceptable are New Jersey, near New York City, and on the Hudson
+        (River)
+      </em>,
+    ],
+  },
+  {
+    n: 96,
+    question: 'Why does the flag have 13 stripes?',
+    answers: [
+      'because there were 13 original colonies',
+      'because the stripes represent the original colonies',
+    ],
+  },
+  {
+    n: 97,
+    question: 'Why does the flag have 50 stars?*',
+    answers: [
+      'because there is one star for each state',
+      'because each star represents a state',
+      'because there are 50 states',
+    ],
+  },
+  {
+    n: 98,
+    question: 'What is the name of the national anthem?',
+    answers: ['The Star-Spangled Banner'],
+  },
+  {
+    n: 99,
+    question: 'When do we celebrate Independence Day?*',
+    answers: ['July 4'],
+  },
+  {
+    n: 100,
+    question: (
+      <>
+        Name <em>two</em> national U.S. holidays.
+      </>
+    ),
+    answers: [
+      'New Year’s Day',
+      'Martin Luther King, Jr. Day',
+      'Presidents’ Day',
+      'Memorial Day',
+      'Independence Day',
+      'Labor Day',
+      'Columbus Day',
+      'Veterans Day',
+      'Thanksgiving',
+      'Christmas',
+    ],
+  },
 ];
 
 // Assert that cards are numbered linearly.
