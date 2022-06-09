@@ -401,6 +401,115 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
     answers: ['vote in a federal election', 'run for federal office'],
   },
   {
+    n: 51,
+    question: (
+      <>
+        What are <em>two</em> rights of everyone living in the United States?
+      </>
+    ),
+    answers: [
+      'freedom of expression',
+      'freedom of speech',
+      'freedom of assembly',
+      'freedom to petition the government',
+      'freedom of religion',
+      'the right to bear arms',
+    ],
+  },
+  {
+    n: 52,
+    question: (
+      <>What do we show loyalty to when we say the Pledge of Allegiance?</>
+    ),
+    answers: ['the United States', 'the flag'],
+  },
+  {
+    n: 53,
+    question: (
+      <>
+        What is <em>one</em> promise you make when you become a United States
+        citizen?
+      </>
+    ),
+    answers: [
+      'give up loyalty to other countries',
+      'defend the Constitution and laws of the United States',
+      'obey the laws of the United States',
+      'serve in the U.S. military (if needed)',
+      'serve (do important work for) the nation (if needed)',
+      'be loyal to the United States',
+    ],
+  },
+  {
+    n: 54,
+    question: <>How old do citizens have to be to vote for President?*</>,
+    answers: ['eighteen (18) and older'],
+  },
+  {
+    n: 55,
+    question: (
+      <>
+        What are <em>two</em> ways that Americans can participate in their
+        democracy?
+      </>
+    ),
+    answers: [
+      'vote',
+      'join a political party',
+      'help with a campaign',
+      'join a civic group',
+      'join a community group',
+      'give an elected official your opinion on an issue',
+      'call Senators and Representatives',
+      'publicly support or oppose an issue or policy',
+      'run for office',
+      'write to a newspaper',
+    ],
+  },
+  {
+    n: 56,
+    question: (
+      <>When is the last day you can send in federal income tax forms?*</>
+    ),
+    answers: ['April 15'],
+  },
+  {
+    n: 57,
+    question: <>When must all men register for the Selective Service?</>,
+    answers: [
+      'at age eighteen (18)',
+      'between eighteen (18) and twenty-six (26)',
+    ],
+  },
+  {
+    n: 58,
+    question: (
+      <>
+        What is <em>one</em> reason colonists came to America?
+      </>
+    ),
+    answers: [
+      'freedom',
+      'political liberty',
+      'religious freedom',
+      'economic opportunity',
+      'practice their religion',
+      'escape persecution',
+    ],
+  },
+  {
+    n: 59,
+    question: <>Who lived in America before the Europeans arrived?</>,
+    answers: ['American Indians', 'Native Americans'],
+  },
+  {
+    n: 60,
+    question: (
+      <>What group of people was taken to America and sold as slaves?</>
+    ),
+    answers: ['Africans', 'people from Africa'],
+  },
+  {
     n: 69,
     question: 'Who is the “Father of Our Country”?',
     answers: ['(George) Washington'],
