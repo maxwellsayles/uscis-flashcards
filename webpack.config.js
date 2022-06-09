@@ -6,6 +6,8 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     filename: 'index.html',
     inject: 'body',
 });
+const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin');
+
 
 module.exports = {
     entry: './src/index.js',
@@ -35,5 +37,5 @@ module.exports = {
 	    },
 	],
     },
-    plugins: [HtmlWebpackPluginConfig],
+    plugins: [HtmlWebpackPluginConfig, new HtmlInlineScriptPlugin()],
 }
