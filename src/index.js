@@ -64,6 +64,19 @@ function App({ cardInfos }: { cardInfos: $ReadOnlyArray<CardInfo> }) {
       }}
     >
       {card}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: '100px',
+          margin: 'auto',
+          width: '60%',
+          textAlign: 'right',
+        }}
+      >
+        {idx + 1} of {cardInfos.length}
+        <br />
+        Use left/right arrows to navigate.
+      </div>
     </div>
   );
 }
