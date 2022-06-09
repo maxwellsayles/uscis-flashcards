@@ -691,3 +691,11 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
     answers: ['(Franklin) Roosevelt'],
   },
 ];
+
+// Assert that cards are numbered linearly.
+cardInfos.forEach((e, i) => {
+  const assert = i + 1 === cardInfos.length || e.n + 1 === cardInfos[i + 1].n;
+  if (!assert) {
+    alert(`Card ${cardInfos[i + 1].n} should not follow card ${e.n}`);
+  }
+});
