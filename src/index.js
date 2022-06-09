@@ -49,11 +49,22 @@ function App({ cardInfos }: { cardInfos: $ReadOnlyArray<CardInfo> }) {
     return () => window.removeEventListener('keyup', keyupHandler);
   }, []);
 
-  const card = cardInfos[idx];
-  return showAnswers ? (
-    <Card n={card.n} question={card.question} answers={card.answers} />
+  const ci = cardInfos[idx];
+  const card = showAnswers ? (
+    <Card n={ci.n} question={ci.question} answers={ci.answers} />
   ) : (
-    <Card n={card.n} question={card.question} />
+    <Card n={ci.n} question={ci.question} />
+  );
+  return (
+    <div
+      style={{
+        margin: '100px auto auto auto',
+        width: '60%',
+        textAlign: 'center',
+      }}
+    >
+      {card}
+    </div>
   );
 }
 
