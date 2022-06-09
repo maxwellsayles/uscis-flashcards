@@ -690,6 +690,40 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
     ),
     answers: ['(Franklin) Roosevelt'],
   },
+  {
+    n: 81,
+    question: <>Who did the United States fight in World War II?</>,
+    answers: ['Japan, Germany, and Italy'],
+  },
+  {
+    n: 82,
+    question: (
+      <>
+        Before he was President, Eisenhower was a general. What war was he in?
+      </>
+    ),
+    answers: ['World War II'],
+  },
+  {
+    n: 83,
+    question: (
+      <> During the Cold War, what was the main concern of the United States?</>
+    ),
+    answers: ['Communism'],
+  },
+  {
+    n: 84,
+    question: <>What movement tried to end racial discrimination?</>,
+    answers: ['civil rights (movement)'],
+  },
+  {
+    n: 85,
+    question: <>What did Martin Luther King, Jr. do?*</>,
+    answers: [
+      'fought for civil rights',
+      'worked for equality for all Americans',
+    ],
+  },
 ];
 
 // Assert that cards are numbered linearly.
