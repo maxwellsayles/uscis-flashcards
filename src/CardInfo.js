@@ -600,4 +600,94 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
     question: 'Who was the first President?*',
     answers: ['(George) Washington'],
   },
+  {
+    n: 71,
+    question: (
+      <>What territory did the United States buy from France in 1803?</>
+    ),
+    answers: ['the Louisiana Territory', 'Louisiana'],
+  },
+  {
+    n: 72,
+    question: (
+      <>
+        Name <em>one</em> war fought by the United States in the 1800s.
+      </>
+    ),
+    answers: [
+      'War of 1812',
+      'Mexican-American War',
+      'Civil War',
+      'Spanish-American War',
+    ],
+  },
+  {
+    n: 73,
+    question: <>Name the U.S. war between the North and the South.</>,
+    answers: ['the Civil War', 'the War between the States'],
+  },
+  {
+    n: 74,
+    question: (
+      <>
+        Name <em>one</em> problem that led to the Civil War.
+      </>
+    ),
+    answers: ['slavery', 'economic reasons', 'states’ rights'],
+  },
+  {
+    n: 75,
+    question: (
+      <>
+        What was <em>one</em> important thing that Abraham Lincoln did?*
+      </>
+    ),
+    answers: [
+      'freed the slaves (Emancipation Proclamation)',
+      'saved (or preserved) the Union',
+      'led the United States during the Civil War',
+    ],
+  },
+  {
+    n: 76,
+    question: <>What did the Emancipation Proclamation do?</>,
+    answers: [
+      'freed the slaves',
+      'freed slaves in the Confederacy',
+      'freed slaves in the Confederate states',
+      'freed slaves in most Southern states',
+    ],
+  },
+  {
+    n: 77,
+    question: <>What did Susan B. Anthony do?</>,
+    answers: ['fought for women’s rights', 'fought for civil rights'],
+  },
+  {
+    n: 78,
+    question: (
+      <>
+        Name <em>one</em> war fought by the United States in the 1900s.*
+      </>
+    ),
+    answers: [
+      'World War I',
+      'World War II',
+      'Korean War',
+      'Vietnam War',
+      '(Persian) Gulf War',
+    ],
+  },
+  {
+    n: 79,
+    question: 'Who was President during World War I?',
+    answers: ['(Woodrow) Wilson'],
+  },
+  {
+    n: 80,
+    question: (
+      <>Who was President during the Great Depression and World War II?</>
+    ),
+    answers: ['(Franklin) Roosevelt'],
+  },
 ];
