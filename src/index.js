@@ -81,6 +81,7 @@ function App({ cardInfos }: { cardInfos: $ReadOnlyArray<CardInfo> }) {
   );
 }
 
+document.title = 'USCIS Flashcards';
 const shuffledCardInfos = [...cardInfos].sort(() => Math.random() - 0.5);
 const xx = <App cardInfos={shuffledCardInfos} />;
 const root = document.getElementById('root');
