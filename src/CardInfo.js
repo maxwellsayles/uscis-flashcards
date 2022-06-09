@@ -335,7 +335,71 @@ export const cardInfos: $ReadOnlyArray<CardInfo> = [
       'approve zoning and land use',
     ],
   },
-
+  {
+    n: 43,
+    question: 'Who is the Governor of your state now?',
+    answers: ['Jay Inslee (for Washington State as of 2022)'],
+  },
+  {
+    n: 44,
+    question: 'What is the capital of your state?*',
+    answers: ['Olympia, WA (as of 2022)'],
+  },
+  {
+    n: 45,
+    question: (
+      <>
+        What are the <em>two</em> major political parties in the United States?*
+      </>
+    ),
+    answers: ['Democratic and Republican'],
+  },
+  {
+    n: 46,
+    question: <>What is the political party of the President now?</>,
+    answers: ['Democratic'],
+  },
+  {
+    n: 47,
+    question: (
+      <>What is the name of the Speaker of the House of Representatives now?</>
+    ),
+    answers: ['Nancy Pelosi (as of 2022)'],
+  },
+  {
+    n: 48,
+    question: (
+      <>
+        There are four amendments to the Constitution about who can vote.
+        Describe <em>one</em> of them.
+      </>
+    ),
+    answers: [
+      'Citizens eighteen (18) and older (can vote).',
+      'You don’t have to pay (a poll tax) to vote.',
+      'Any citizen can vote. (Women and men can vote.)',
+      'A male citizen of any race (can vote).',
+    ],
+  },
+  {
+    n: 49,
+    question: (
+      <>
+        What is <em>one</em> responsibility that is only for United States
+        citizens?*
+      </>
+    ),
+    answers: ['serve on a jury', 'vote in a federal election'],
+  },
+  {
+    n: 50,
+    question: (
+      <>
+        Name <em>one</em> right only for United States citizens.
+      </>
+    ),
+    answers: ['vote in a federal election', 'run for federal office'],
+  },
   {
     n: 69,
     question: 'Who is the “Father of Our Country”?',
